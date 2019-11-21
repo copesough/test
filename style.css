@@ -1,0 +1,319 @@
+body
+{
+	margin: 0;
+	font-family: 'Railway Regular', arial, sans-serif;
+	color: white;
+}
+a
+{
+	font-family: "Montserrat Light", arial, sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+label input[type="radio"] {
+  display: none;
+}
+label input[type="radio"] ~ span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 0 3px 25px;
+}
+label input[type="radio"] ~ span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  transition: all 300ms ease-in-out;
+}
+label input[type="radio"]:checked ~ span:before {
+  border: 5px solid #d3c1ad;
+}
+header 
+{
+	height: 1030px;
+	width: 1920px;
+	background: url(img/bckg/1.png);
+}
+header nav a
+{
+	font-family: "Montserrat Light", arial, sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+
+.fnt-RailwayRegular {font-family: "Railway Regular", arial, sans-serif;	}
+.fnt-RailwayMedium{font-family: "Railway Medium", arial, sans-serif;}
+.fnt-RailwayExtrabold {font-family: "Railway Extrabold", arial, sans-serif;	}
+.fnt-RailwaySemibold{font-family: "Railway Semibold", arial, sans-serif;}
+.fnt-RailwayBold{font-family: "Railway Bold", arial, sans-serif;}
+.fnt-MontserratLight{font-family: "Montserrat Light", arial, sans-serif;}
+.fnt-MontserratExtrlight{font-family: "Montserrat ExtrLight", arial, sans-serif;}
+.fnt-RobotoRegular{font-family: "Roboto Regular", arial, sans-serif;}
+
+.logo
+{
+	color: white;
+	text-decoration: none;
+	font-size: 34;
+}
+.logo span
+{
+	color: white;
+	display: inline-block;
+	width: 64px;
+	height: 56px;
+	background: url('img/waxomLogo.png');
+}
+
+header .cart
+{
+	display: inline-block;
+	width: 18px;
+	height: 24px;
+	background: url('img/icon-cart.png');
+}
+
+header .search
+{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url('img/icon-search.png');
+}
+
+header .toLeft
+{
+	width: 40px;
+	height: 80px;
+	background: url(img/icons/ar.gif);
+}
+
+header .toRight
+{
+	width: 40px;
+	height: 80px;
+	background: url(img/icons/ar2.gif);
+}
+
+nav.menu article:nth-child(1) a>span
+{
+	display: inline-block;
+	width: 47px;
+	height: 47px;
+	background: url(img/icons/pen.gif);
+}
+
+nav.menu article:nth-child(2) a>span
+{
+	display: inline-block;
+	width: 43px;
+	height: 40px;
+	background: url(img/icons/som.gif);
+}
+
+nav.menu article:nth-child(3) a>span
+{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	background: url(img/icons/z.gif);
+}
+
+nav.menu article:nth-child(4) a>span
+{
+	display: inline-block;
+	width: 52px;
+	height: 36px;
+	background: url(img/icons/purse.gif);
+}
+
+.unit1
+{
+	min-height: 140px;
+	background: linear-gradient(90deg, #241d1a, #4e3427);
+}
+
+.unit1 .btn
+{
+	float: right;
+	padding: 5px 10px;
+	background-color: #998675;
+	border-bottom: 2px solid #736357;
+	border-radius: 3px;
+}
+
+.unit2
+{
+	min-height: 120px;
+	background: linear-gradient(90deg, #241d1a, #4e3427);
+}
+
+.unit2 section:nth-child(1)>div:nth-child(1)
+{
+	width: 44px;
+	height: 44px;
+	background: url(img/icons/satis.png);
+}
+
+.unit2 section:nth-child(2)>div:nth-child(1)
+{
+	width: 44px;
+	height: 44px;
+	background: url(img/icons/cups.png);
+}
+
+.unit2 section:nth-child(3)>div:nth-child(1)
+{
+	width: 44px;
+	height: 44px;
+	background: url(img/icons/blog.png);
+}
+
+.unit2 section:nth-child(4)>div:nth-child(1)
+{
+	width: 44px;
+	height: 44px;
+	background: url(img/icons/likes.png);
+}
+
+.unit2 section:nth-child(5)>div:nth-child(1)
+{
+	width: 44px;
+	height: 44px;
+	background: url(img/icons/launched.png);
+}
+
+.ideas
+{
+	position: relative;
+}
+
+.bckg
+{
+	min-height: 420px;
+}
+.ideas .bckg>div:nth-child(1)
+{
+	position: absolute; 
+	background: url(img/bckg/browser-left.png);
+	width: 770px;
+	height: 400px;
+}
+.ideas .bckg>div:nth-child(2)
+{
+	position: absolute;
+	background: url(img/bckg/browser-right.png);
+	width: 770px;
+	height: 482px;
+}
+.ideas .bckg>div:nth-child(3)
+{
+	position: absolute;
+	width: 770px;
+	height: 482px;
+	background: url(img/bckg/browser-center.png);
+}
+
+.projects 
+{
+	display: flex;
+}
+
+.projects article
+{
+	
+	width: 120px;
+	min-height: 100px;
+}
+
+.presentation
+{
+	width: 1918px;
+	height: 721px;
+	background: url(img/bckg/bck.png);
+}
+
+.mobileDevice
+{
+	width: 1920px;
+	height: 695px;
+	background: url(img/bckg/background.png);
+}
+
+.mobileDevice
+{
+	color: #8c8c8c;
+}
+
+.adv
+{
+	width: 1920px;
+	height: 489px;
+	background: url(img/bckg/bg2.png);
+}
+.adv span
+{
+	display: block;
+}
+.adv a:nth-child(1) span
+{
+	width: 210px;
+	height: 127px;
+	background: url(img/logo1.png);
+}
+.adv a:nth-child(2) span
+{
+	width: 210px;
+	height: 210px;
+	background: url(img/logo2.png);
+}
+.adv a:nth-child(3) span
+{
+	width: 210px;
+	height: 130px;
+	background: url(img/logo3.png);
+}
+.adv a:nth-child(4) span
+{
+	width: 210px;
+	height: 164px;
+	background: url(img/logo4.png);
+}
+
+.unit3
+{
+	background: #191919;
+}
+
+.unit3 section h3
+{
+
+}
+
+.unit3 section:nth-child(1)>h3>span
+{
+	display: inline-block;
+	width: 64px;
+	height: 56px;
+	background: url(img/waxomLogo.png);
+}
+
+.unit3 section>div>span
+{
+	color: #00bff3;
+}
+
+footer
+{
+	background: #111111;
+}
