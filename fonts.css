@@ -1,0 +1,41 @@
+/*---------------------------------*/
+   @font-face {
+    font-family: 'Railway Regular'; 
+    src: url(fonts/Railway/Raleway-Regular.ttf); 
+   }
+@font-face {
+	font-family: 'Railway Medium'; 
+	src: url(fonts/Railway/Raleway-Medium.ttf); 
+}
+@font-face {
+	font-family: 'Railway Extrabold'; 
+	src: url(fonts/Railway/Raleway-ExtraBold.ttf); 
+}
+@font-face {
+	font-family: 'Railway Semibold'; 
+	src: url(fonts/Railway/Raleway-SemiBold.ttf); 
+}
+@font-face {
+	font-family: 'Railway Bold'; 
+	src: url(fonts/Railway/Raleway-Bold.ttf); 
+}
+
+
+/*-------------------------------------------*/
+
+
+@font-face {
+	font-family: 'Montserrat Light';
+	src: url(fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+	font-family: 'Montserrat ExtrLight';
+	src: url(fonts/Montserrat/Montserrat-ExtraLight.ttf);
+}
+
+/*---------------------------------------*/
+
+@font-face {
+	font-family: 'Roboto Regular';
+	src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
