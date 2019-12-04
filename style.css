@@ -1,3 +1,52 @@
+.posts .block {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.posts .block article {margin-right: 5px;}
+
+
+
+@media screen and (min-width: 1140px) {
+    .posts .block {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    .posts .block article
+    {
+    	width: 28%;
+    	margin-left: 5%;
+    	margin-right: 0;
+    }
+    .posts .block article:nth-child(1)
+    {
+    	margin-left: 0;
+    }
+  }
+
+
+
+@media screen and (max-width: 1140px)
+{
+	main>nav.menu
+	{
+		flex-wrap: wrap;
+	}
+	.menu article
+	{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 970px)
+{
+	.menu article
+	{
+		width: 70%;
+	}
+}
+
 body
 {
 	margin: 0 auto;
@@ -26,45 +75,42 @@ a
 	position: absolute;
 }
 
-label input[type="radio"] {
-  display: none;
-}
-label input[type="radio"] ~ span {
-  position: relative;
-  display: inline-block;
-  padding: 3px 0 3px 25px;
-}
-label input[type="radio"] ~ span:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 18px;
-  height: 18px;
-  background: #fff;
-  margin-right: 15px;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  box-sizing: border-box;
-  transition: all 300ms ease-in-out;
-}
-label input[type="radio"]:checked ~ span:before {
-  border: 5px solid #d3c1ad;
-}
+
 header 
 {
+	
+}
+
+
+header .carousel-control-next-icon, header .carousel-control-prev-icon
+{
+	width: 32px;
+	height: 32px;
+}
+
+
+
+header .bg1
+{
 	position: relative;
-	height: 1030px;
+	height: 721px;
 	width: 100%;
 	background: url(img/bckg/1.png);
+}
+
+header .bg2
+{
+	position: relative;
+	height: 721px;
+	width: 100%;
+	background: url(img/bckg/bck.png);
 }
 
 header>* { position: relative;  }
 
 header .bg
 {
-	position: absolute;
+	
 	width: 100%;
 	height: 100%;
 	background-color: rgba(1,1,1,0.3);
@@ -93,7 +139,7 @@ header nav a
 	vertical-align: middle;
 }
 
-header>section
+header section
 {
 	position: absolute;
 	margin-left: -250px;
@@ -154,29 +200,10 @@ header .search
 	background: url('img/icon-search.png');
 }
 
-header .toLeft
-{
-	cursor: pointer;
-	position: absolute;
-	left: -200px;
-	width: 40px;
-	height: 73px;
-	background: url(img/icons/ar.png);
-}
 
-header .toRight
-{
-	cursor: pointer;
-	right: -200px;
-	position: absolute;
-	width: 40px;
-	height: 73px;
-	background: url(img/icons/ar2.png);
-}
-
-main>*,footer {
+main>* {
 	
-	min-width: 1100px;
+	
 	max-width: 1980px;
 }
 
@@ -200,6 +227,8 @@ main>nav.menu
 {
 	color: #8c8c8c;	
 	margin-bottom: 30px;
+	min-height: 97px;
+	margin-right: 9px;
 }
 
 .menu article
@@ -240,6 +269,7 @@ nav.menu article:nth-child(2) a>span
 	display: inline-block;
 	width: 43px;
 	height: 40px;
+	margin-bottom: 7px;
 	background: url(img/icons/som.gif);
 }
 
@@ -248,6 +278,7 @@ nav.menu article:nth-child(3) a>span
 	display: inline-block;
 	width: 44px;
 	height: 44px;
+	margin-bottom: 3px;
 	background: url(img/icons/z.gif);
 }
 
@@ -256,6 +287,7 @@ nav.menu article:nth-child(4) a>span
 	display: inline-block;
 	width: 52px;
 	height: 36px;
+	margin-bottom: 11px;
 	background: url(img/icons/purse.gif);
 }
 
@@ -429,18 +461,20 @@ nav.menu article:nth-child(4) a>span
 
 .projects .block
 {
-	overflow: hidden;
-	max-width: 1120px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1148px;
 	margin: 0 auto;
 }
 
 .projects article
 {
-	float: left;
 	position: relative;
 	min-height: 100px;
+	width: 374px;
 	text-align: middle;
-	margin: 0 20px 20px 0;
+	margin: 0 7px 20px 0;
 }
 
 .projects section
@@ -627,14 +661,14 @@ nav.menu article:nth-child(4) a>span
 	text-align: center;
 }
 
-.posts .block
-{
-	display: flex;
-}
 
 .posts article section h2 {color: #555;}
 
-.posts article section{color: #8c8c8c;}
+.posts article section
+{
+	color: #8c8c8c;
+	width: 370px;
+}
 
 .posts article 
 {
@@ -693,10 +727,12 @@ nav.menu article:nth-child(4) a>span
 .adv
 {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	padding: 0 150px;
-	max-width: 1416px;
+	margin: 0 auto;
+	max-width: 1770px;
+	min-width: 730px;
 	height: 489px;
 	background: url(img/bckg/bg2.png);
 }
@@ -740,15 +776,18 @@ nav.menu article:nth-child(4) a>span
 .unit3
 {
 	display: flex;
+	flex-wrap: wrap;
 	background: #191919;
 	font-family: montserrat light;
 	justify-content: center;
+	max-width: 1770px;
+	margin: 0 auto;
 }
 
 .unit3 section
 {
-	margin: 0 12px;
-	width: 266px;
+	margin: 12px;
+	width: 23%;
 }
 
 .unit3 section h3
@@ -766,10 +805,6 @@ nav.menu article:nth-child(4) a>span
 
 }
 
-.unit3 section:nth-child(1)
-{
-	width: 310px;
-}
 
 .unit3 section>div>span
 {
@@ -786,6 +821,8 @@ footer
 	text-align: center;
 	color: #555;
 	font-family: montserrat light;
+	max-width: 1770px;
+	margin: 0 auto;
 }
 
 
@@ -796,3 +833,13 @@ footer .gold
 }
 
 /*998675   959595waxom  c7b299brown*/
+
+
+@media screen and (max-width: 1230px)
+{
+	.unit3 section
+	{
+		width: 38%;
+		margin-right: 5%;
+	}
+}
